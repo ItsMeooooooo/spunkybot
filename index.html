@@ -29,8 +29,20 @@
       <div class="inner clearfix">
         <section id="main-content">
           <p><strong>Spunky Bot</strong> is a lightweight game server administration bot and RCON tool.
-Its purpose is to administrate an Urban Terror 4.1 / 4.2 server and provide statistical data for players.</p>
+Its purpose is to administrate an Urban Terror server and provide real time statistical data for players.</p>
+<p>Spunky Bot is supporting UrT 4.1 and 4.2 in the latest version.</p>
 
+<h3>
+  Features in a nut-shell
+</h3>
+<ul>
+<li>lightweight and fast</li>
+<li>Reads the game log file in real time for Urban Terror</li>
+<li>Different user groups and levels</li>
+<li>No need to give the RCON password to the members, Spunky deals with the access control</li>
+<li>Stores all player related information in a SQLite database</li>
+<li>Supports temporary and permanent bans</li>
+</ul>
 <h3>
 <a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h3>
 
@@ -46,20 +58,19 @@ Its purpose is to administrate an Urban Terror 4.1 / 4.2 server and provide stat
 </li>
 <li>In-game displayed rules are contained in the file <code>/conf/rules.conf</code>
 </li>
-<li>Run the bot: <code>python spunky.py</code>
+<li>Run the bot manually: <code>python spunky.py</code>
 </li>
+<li>Or use the provided initscript to run the Spunky Bot as daemon</li>
 </ul><h3>
 <a name="first-start-instruction" class="anchor" href="#first-start-instruction"><span class="octicon octicon-link"></span></a>First start instruction</h3>
 
 <ul>
-<li>Set in the config file <code>/conf/settings.conf</code> the value <code>iamgod=1</code>
-</li>
-<li>Start the Bot, connect to your game server and enter in the global chat <code>!iamgod</code>. This will give you the admin level "Head Admin".</li>
-<li>Afterwards set the value <code>iamgod=0</code> and restart the Bot (important step!)</li>
+<li>Connect to your game server and enter in the global chat <code>!iamgod</code> to get the admin level "Head Admin".
+This command is only once available.</li>
 </ul><h3>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h3>
 
-<p>The Spunky Bot is released under the MIT License.</p>
+<p>The Spunky Bot is free and open source, released under the MIT License.</p>
         </section>
 
         <aside id="sidebar">
